@@ -1,0 +1,16 @@
+Index: b/xml-height-68/03_menu.xml
+===================================================================
+--- a/xml-height-68/03_menu.xml
++++ b/xml-height-68/03_menu.xml
+@@ -335,9 +335,9 @@
+ <!--SUBMENULOGOS--><!--SUBMENU_PLUGINS-INSPT-->		
+ 						
+ <!--SUBMENULOGOS--><!--CHANNELLOGOS-Begin-->
+-<!--SUBMENULOGOS--><block   condition="file('../liquid-logos4anthra_HD/{MenuTitle:rest}.png')" > 
++<!--SUBMENULOGOS--><block   condition="file('CHANNELLOGOSPATH/{MenuTitle:rest}.png')" >
+ <!--SUBMENULOGOS-->   <image   x1="0" x2="1920" y1="0"  y2="80"   path="images/top.png"/>                                   
+-<!--SUBMENULOGOS-->	<image x1="30" x2="137" y1="10" y2="70"  path="../liquid-logos4anthra_HD/{MenuTitle:rest}.png" />
++<!--SUBMENULOGOS-->	<image x1="30" x2="137" y1="10" y2="70"  path="CHANNELLOGOSPATH/{MenuTitle:rest}.png" />
+ <!--SUBMENULOGOS-->	<rectangle x1="30" x2="31" y1="10" y2="11" color="Black" />
+ <!--SUBMENULOGOS-->	<rectangle x1="136" x2="137" y1="10" y2="11" color="Black" />
+ <!--SUBMENULOGOS-->	<rectangle x1="30" x2="31" y1="69" y2="70" color="Black" />
