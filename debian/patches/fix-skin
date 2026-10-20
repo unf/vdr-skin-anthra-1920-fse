@@ -1,7 +1,12 @@
-Index: b/xml-height-68/03_menu.xml
+Description: Use the configurable CHANNELLOGOSPATH for the submenu logos
+ The submenu channel logos used the fixed path ../liquid-logos4anthra_HD
+ instead of the CHANNELLOGOSPATH set in Make.config.
+Author: Frank Neumann <fnu@vdr-portal.de>
+Forwarded: no
+Index: vdr-skin-anthra-1920-fse/xml-height-68/03_menu.xml
 ===================================================================
---- a/xml-height-68/03_menu.xml
-+++ b/xml-height-68/03_menu.xml
+--- vdr-skin-anthra-1920-fse.orig/xml-height-68/03_menu.xml
++++ vdr-skin-anthra-1920-fse/xml-height-68/03_menu.xml
 @@ -335,9 +335,9 @@
  <!--SUBMENULOGOS--><!--SUBMENU_PLUGINS-INSPT-->		
  						
