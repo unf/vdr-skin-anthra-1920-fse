@@ -1,0 +1,34 @@
+Description: show the video size also for UHD
+ The channel info showed the video size only for heights up to 1080 lines,
+ UHD (3840x2160) showed nothing. All sizes except 1080 now show
+ WIDTHxHEIGHT, 1080 lines still show 1920x1080.
+Author: Frank Neumann <fnu@vdr-portal.de>
+Forwarded: not-needed
+Last-Update: 2026-10-23
+---
+Index: vdr-skin-anthra-1920-fse/xml-height-58/02_channelInfo.xml
+===================================================================
+--- vdr-skin-anthra-1920-fse.orig/xml-height-58/02_channelInfo.xml
++++ vdr-skin-anthra-1920-fse/xml-height-58/02_channelInfo.xml
+@@ -109,7 +109,7 @@
+ <text x1="1162" x2="1274" y1="1048" y2="1070" condition="not({HasDolby})" align="center"  color="TextButton" font="VDRSymbols Sans:Book@20">DOLBY</text>
+ <text x1="1276" x2="1390" y1="1048" y2="1070" align="center" condition="equal({AudioChannel},'stereo')" color="TextSmallButton" font="VDRSymbols Sans:Book@20">STEREO</text>
+ <text x1="1276" x2="1390" y1="1048" y2="1070" condition="not(equal({AudioChannel},'stereo'))" align="center"  color="TextButton" font="VDRSymbols Sans:Book@20">STEREO</text>
+-<!--VIDEOSIZE--><text x1="1392" x2="1540" y1="1048" y2="1070" align="center" condition="lt({VideoSizeHeight},1080)" color="TextSmallButton" font="VDRSymbols Sans:Book@20">{VideoSizeWidth}x{VideoSizeHeight}</text>
++<!--VIDEOSIZE--><text x1="1392" x2="1540" y1="1048" y2="1070" align="center" condition="not(equal({VideoSizeHeight},1080))" color="TextSmallButton" font="VDRSymbols Sans:Book@20">{VideoSizeWidth}x{VideoSizeHeight}</text>
+ <!--VIDEOSIZE--><text x1="1392" x2="1540" y1="1048" y2="1070" align="center" condition="equal({VideoSizeHeight},1080)" color="TextSmallButton" font="VDRSymbols Sans:Book@20">1920x1080</text>
+ <text x1="1542" x2="1654" y1="1048" y2="1070" align="center" color="TextButton" condition="not({TimerConflicts})" font="VDRSymbols Sans:Book@20" >T-CONFL</text>
+ <blink x1="1542" x2="1654" y1="1048" y2="1070" align="center" color="TextSmallButton" delay="1000" condition="{TimerConflicts}" font="VDRSymbols Sans:Book@20" >T-CONFL</blink>
+Index: vdr-skin-anthra-1920-fse/xml-height-68/02_channelInfo.xml
+===================================================================
+--- vdr-skin-anthra-1920-fse.orig/xml-height-68/02_channelInfo.xml
++++ vdr-skin-anthra-1920-fse/xml-height-68/02_channelInfo.xml
+@@ -109,7 +109,7 @@
+ <text x1="1162" x2="1274" y1="1048" y2="1070" condition="not({HasDolby})" align="center"  color="TextButton" font="VDRSymbols Sans:Book@20">DOLBY</text>
+ <text x1="1276" x2="1390" y1="1048" y2="1070" align="center" condition="equal({AudioChannel},'stereo')" color="TextSmallButton" font="VDRSymbols Sans:Book@20">STEREO</text>
+ <text x1="1276" x2="1390" y1="1048" y2="1070" condition="not(equal({AudioChannel},'stereo'))" align="center"  color="TextButton" font="VDRSymbols Sans:Book@20">STEREO</text>
+-<!--VIDEOSIZE--><text x1="1392" x2="1540" y1="1048" y2="1070" align="center" condition="lt({VideoSizeHeight},1080)" color="TextSmallButton" font="VDRSymbols Sans:Book@20">{VideoSizeWidth}x{VideoSizeHeight}</text>
++<!--VIDEOSIZE--><text x1="1392" x2="1540" y1="1048" y2="1070" align="center" condition="not(equal({VideoSizeHeight},1080))" color="TextSmallButton" font="VDRSymbols Sans:Book@20">{VideoSizeWidth}x{VideoSizeHeight}</text>
+ <!--VIDEOSIZE--><text x1="1392" x2="1540" y1="1048" y2="1070" align="center" condition="equal({VideoSizeHeight},1080)" color="TextSmallButton" font="VDRSymbols Sans:Book@20">1920x1080</text>
+ <text x1="1542" x2="1654" y1="1048" y2="1070" align="center" color="TextButton" condition="not({TimerConflicts})" font="VDRSymbols Sans:Book@20" >T-CONFL</text>
+ <blink x1="1542" x2="1654" y1="1048" y2="1070" align="center" color="TextSmallButton" delay="1000" condition="{TimerConflicts}" font="VDRSymbols Sans:Book@20" >T-CONFL</blink>
