@@ -1,0 +1,11 @@
+Description: use existing images for the menu backgrounds
+ xml-height-58 referred to menuBG58, menuBGLow58, menuBGShort58,
+ menuItemLong58 and menuCurrentLong58.png, and both heights to
+ menuBGShort.png. None of them is in the tarball, so the menu items showed
+ no background bars and text2skin logged "Couldn't load". The 58 lines
+ height now uses the images of the 68 lines height, text2skin scales them
+ to the item. menuBGShort (main menu without logos) uses menuBG.
+Author: Frank Neumann <fnu@vdr-portal.de>
+Forwarded: not-needed
+Last-Update: 2026-11-10
+---
