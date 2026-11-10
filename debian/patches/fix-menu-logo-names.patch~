@@ -1,0 +1,9 @@
+Description: fix logo names in the menu logo lists
+ Four entries referred to logos that do not exist: picselshow.png (the
+ submenu list uses images.png), "weather .png" with a trailing blank,
+ Xterm.png (anthra_1920_FSt uses the commands logo) and the misspelled
+ epgsysnc. text2skin logged "Couldn't load" in these plugin menus.
+Author: Frank Neumann <fnu@vdr-portal.de>
+Forwarded: not-needed
+Last-Update: 2026-11-10
+---

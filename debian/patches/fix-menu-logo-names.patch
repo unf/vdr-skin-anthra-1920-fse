@@ -1,0 +1,44 @@
+Description: fix logo names in the menu logo lists
+ Four entries referred to logos that do not exist: picselshow.png (the
+ submenu list uses images.png), "weather .png" with a trailing blank,
+ Xterm.png (anthra_1920_FSt uses the commands logo) and the misspelled
+ epgsysnc. text2skin logged "Couldn't load" in these plugin menus.
+Author: Frank Neumann <fnu@vdr-portal.de>
+Forwarded: not-needed
+Last-Update: 2026-11-10
+---
+--- a/anthra_conf/mainmenu_plugins.conf
++++ b/anthra_conf/mainmenu_plugins.conf
+@@ -10,11 +10,11 @@ fritzbox:fritzbox
+ mailbox:mailbox
+ music:music
+ nordlichtsepg:schedule
+-picselshow:picselshow
++picselshow:images
+ remoteosd:remoteosd
+ streamdev-client:pause
+ quickepgsearch:quickepgsearch
+ sudoku:sudoku
+ systeminfo:systeminfo1
+ tvm2vdr:tvm2vdr
+-weatherhd:weather 
++weatherhd:weather
+--- a/anthra_conf/mainmenu_yavdr_menuorg
++++ b/anthra_conf/mainmenu_yavdr_menuorg
+@@ -21,4 +21,4 @@ VDR neu starten:Restart_VDR
+ Video:Video
+ Web:Web
+ XBMC:XBMC
+-Xterm:Xterm
++Xterm:commands
+--- a/anthra_conf/submenu_plugins.conf
++++ b/anthra_conf/submenu_plugins.conf
+@@ -3,7 +3,7 @@ cdda:cdda
+ cdplayer:cdplayer
+ dvd:dvd
+ epgsearch:epgsearch
+-epgsysnc:epgsysnc
++epgsync:epgsync
+ extrecmenu:recordings
+ femon:femon
+ fritzzzzzbox:fritzbox

@@ -1,3 +1,12 @@
+vdr-skin-anthra-1920-fse (0.1.3-4fnu0~trixie) trixie; urgency=medium
+
+  * Fix four logo names in the menu logo lists (picselshow, weatherhd,
+    Xterm, epgsync), the logos were missing in these plugin menus.
+  * contains following patches:
+    -fix-menu-logo-names.patch
+
+ -- Frank Neumann <fnu@vdr-portal.de>  Tue, 10 Nov 2026 14:53:09 +0100
+
 vdr-skin-anthra-1920-fse (0.1.3-3fnu0~trixie) trixie; urgency=medium
 
   * Use existing images for the menu backgrounds: the 58 lines height
